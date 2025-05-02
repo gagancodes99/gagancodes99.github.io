@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import HomeDesk from '../components/HomeDesk'
+import HomeMob from '../components/HomeMob'
 
 const Home = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
-    <div>Home</div>
+    <>
+      {windowWidth < 768 ? <HomeMob /> : <HomeDesk />}
+    </>
   )
 }
 
