@@ -15,6 +15,16 @@ body{
     height: 100dvh;
     overflow: hidden;
     font-family: "Geist", sans-serif;
+    color: var(--white);
+    max-width: 1800px;
+    margin-inline: auto;
+    
+}
+
+@media screen and (min-width: 1800px) {
+    body{
+        border-inline: 1px solid rgba(201,199,189, 0.2);
+    }
 }
 @font-face {
     font-family: 'aalto';
@@ -27,4 +37,7 @@ body{
 .ff-geist{
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
+}
+.grid-border{
+    border: 1px solid rgba(201,199,189,.20);
 }

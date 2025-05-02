@@ -1,14 +1,28 @@
 import { useState } from 'react'
 import './App.css'
 import { motion } from "motion/react"
+
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Blogs from './pages/Blogs';
+import Blog from './pages/Blog';  
+import NotFound from './pages/NotFound';
+import Navbar from './components/Navbar';
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className="text-5xl font-bold underline bg-primary text-white">
-        Hello world!
-      </h1>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/blogs" element={<Blogs />} />
+      <Route path="/blog/:blog_id" element={<Blog />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
     </>
   )
 }
