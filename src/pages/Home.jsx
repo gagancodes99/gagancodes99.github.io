@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <>
-      {windowWidth < 768 ? <HomeMob /> : <HomeDesk />}
+      {windowWidth < 1024 ? <HomeMob /> : <HomeDesk />}
     </>
   )
 }
