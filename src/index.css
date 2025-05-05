@@ -13,7 +13,7 @@ body{
     background: var(--black);
     width: 100%;
     height: 100dvh;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: "Geist", sans-serif;
     color: var(--white);
     max-width: 1800px;
@@ -45,9 +45,18 @@ body{
     height: calc(100dvh - 128px);
     width: 100%;
 }
+.stroke-text{
+    -webkit-text-stroke:  0.8px var(--primary);
+}
+
+
+@media screen and (min-width: 400px) {
+    .stroke-text{
+        -webkit-text-stroke:  0.9px var(--primary);
+    }
+}
 @media screen and (min-width: 1024px) {
     .section-container{
         height: calc(100dvh - 64px);
     }
 }
-
