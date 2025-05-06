@@ -7,7 +7,7 @@ import LinkedinIcon from './svgs/LinkedinIcon'
 
 const Navbar = () => {
   return (
-    <nav className='w-full h-auto grid grid-cols-12 fixed top-0 bg-black'>
+    <nav className='w-full h-auto grid grid-cols-12 fixed top-0 bg-black z-50'>
         <section className="col-span-12 lg:col-span-8 h-16 grid grid-cols-12">
             <div className='col-span-4 grid-border !border-l-0 !border-t-0 flex items-center justify-center sm:justify-start px-2 lg:px-4'>
                 <Logo className='h-12 w-12'/> 
