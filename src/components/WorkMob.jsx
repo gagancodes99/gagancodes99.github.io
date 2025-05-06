@@ -4,7 +4,7 @@ const WorkMob = () => {
   return (
     <section className="home-mob-container">
         <div className=' max-w-md mx-auto flex flex-col items-center justify-center gap-10 pt-8'>
-            <aside className=' p-6 flex flex-col items-center justify-center gap-5'>
+            <aside className=' px-6 pb-0 pt-6 flex flex-col items-center justify-center gap-5'>
                 <div className='w-full aspect-square max-w-80 bg-primary rounded-xl mx-auto'></div>
                 <header className='ff-aalto text-white/90 text-4xl xs:text-[44px] leading-[44px] tracking-[1px] flex flex-row flex-wrap items-start uppercase'>
                 <span>project name</span>
