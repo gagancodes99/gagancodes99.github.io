@@ -1,5 +1,6 @@
 import React from 'react'
 import ArrowIcon from './svgs/ArrowIcon'
+import { Link } from 'react-router-dom'
 
 const BottomBar = () => {
   return (
@@ -8,12 +9,12 @@ const BottomBar = () => {
             09:18:33 PM-02 MAY 25
         </div>
 
-        <button className='h-full col-span-6 sm:col-span-3 grid-border !border-b-0 !border-r-0 flex gap-6 md:gap-4 xl:gap-8 items-center justify-center opacity-90 px-2'>
+        <Link to={'/works'} className='h-full col-span-6 sm:col-span-3 grid-border !border-b-0 !border-r-0 flex gap-6 md:gap-4 xl:gap-8 items-center justify-center opacity-90 px-2'>
             Works <ArrowIcon className='h-4 md:h-5 xl:h-6 w-auto'/>
-        </button>
-        <button className='h-full col-span-6 sm:col-span-3 grid-border !border-b-0 !border-r-0 flex gap-6 md:gap-4 xl:gap-8 items-center justify-center opacity-90 px-2'>
+        </Link>
+        <Link to={'/blogs'} className='h-full col-span-6 sm:col-span-3 grid-border !border-b-0 !border-r-0 flex gap-6 md:gap-4 xl:gap-8 items-center justify-center opacity-90 px-2'>
             Blogs <ArrowIcon className='h-4 md:h-5 xl:h-6 w-auto'/>
-        </button>
+        </Link>
     </nav>
   )
 }

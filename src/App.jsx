@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Works from './pages/Works';
 import Blogs from './pages/Blogs';
 import Blog from './pages/Blog';  
 import NotFound from './pages/NotFound';
@@ -18,7 +18,7 @@ function App() {
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/works" element={<Works />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/blog/:blog_id" element={<Blog />} />
       <Route path="*" element={<NotFound />} />
