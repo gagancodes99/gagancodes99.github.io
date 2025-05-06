@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const BottomBar = () => {
   return (
-    <nav className='h-[72px] w-full grid grid-cols-12 ff-aalto uppercase text-3xl xl:text-4xl tracking-wider '>
+    <nav className='fixed bottom-0 bg-black h-[64px] lg:h-[72px] w-full grid grid-cols-12 ff-aalto uppercase text-3xl xl:text-4xl tracking-wider '>
         <div className='hidden sm:grid place-content-center sm:col-span-6 opacity-90  grid-border !border-r-0 !border-b-0 px-2'>
             09:18:33 PM-02 MAY 25
         </div>

@@ -14,16 +14,18 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <main className='relative h-screen w-full main-container'>
     <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/works" element={<Works />} />
-      <Route path="/blogs" element={<Blogs />} />
-      <Route path="/blog/:blog_id" element={<Blog />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-    </>
+    <section className='content-container'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:blog_id" element={<Blog />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </section>
+    </main>
   )
 }
 

@@ -4,7 +4,7 @@ import ChevronIcon from './svgs/ChevronIcon'
 
 const HomeDesk = () => {
   return (
-    <section className='section-container grid grid-cols-12'>
+    <section className='h-full grid grid-cols-12'>
       <article className='col-span-5'>
         <header className='ff-aalto text-white/90 text-5xl xl:text-6xl tracking-[1px] flex flex-col items-start grid-border !border-t-0 !border-x-0  p-6'>
           <span>architecting scalable,</span>
@@ -28,8 +28,8 @@ const HomeDesk = () => {
         <aside className='h-full w-full grid-border !border-b-0 !border-t-0 !border-r-0 flex items-center justify-center'>
           <img src="/hero.png" alt="" className='aspect-square w-[300px] h-[300px]'/>
         </aside>
-        <BottomBar />
       </article>
+      <BottomBar />
 
     </section>
   )

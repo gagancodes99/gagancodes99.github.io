@@ -18,9 +18,21 @@ body{
     color: var(--white);
     max-width: 1800px;
     margin-inline: auto;
-    
 }
-
+.main-container{
+    overflow: hidden;
+}
+.content-container{
+    height: calc(100dvh - 128px - 64px);
+    margin-top: 128px;
+    overflow: scroll;
+}
+@media screen and (min-width: 1024px) {
+    .content-container{
+        height: calc(100dvh - 64px - 72px);
+        margin-top: 64px;
+    }
+}
 @media screen and (min-width: 1800px) {
     body{
         border-inline: 1px solid rgba(201,199,189, 0.2);
