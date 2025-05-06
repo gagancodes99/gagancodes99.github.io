@@ -3,7 +3,8 @@ export const blogs = [
       id: "b1f7c9a4",
       title: "Understanding Debouncing in JavaScript",
       duration: 5,
-      image: "/images/debouncing-cover.jpg",
+      image: "/images/black.jpg",
+      description: "Learn how debouncing improves web performance by limiting the rate at which a function is executed.",
       content: [
         {
           type: "text",
@@ -31,7 +32,8 @@ export const blogs = [
       id: "a9e3f2b7",
       title: "How to Use useEffect Properly in React",
       duration: 6,
-      image: "/images/useeffect.jpg",
+      image: "/images/purple.jpg",
+      description: "Master the useEffect hook to manage side effects like data fetching in your React applications.",
       content: [
         {
           type: "text",

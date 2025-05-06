@@ -25,7 +25,7 @@ body{
 .content-container{
     height: calc(100dvh - 128px - 64px);
     margin-top: 128px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 @media screen and (min-width: 1024px) {
     .content-container{
