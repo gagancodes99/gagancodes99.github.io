@@ -17,9 +17,9 @@ const Blogs = () => {
 
               <div className="flex items-center justify-between w-full mt-4">
                 <div className="flex gap-2 items-center">
-                  <span class="relative flex size-2">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/90 opacity-75"></span>
-                    <span class="relative inline-flex size-2 rounded-full bg-primary"></span>
+                  <span className="relative flex size-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/90 opacity-75"></span>
+                    <span className="relative inline-flex size-2 rounded-full bg-primary"></span>
                   </span>
                   <p className="text-xs">{blog?.duration}m read</p>
                 </div>
