@@ -6,8 +6,13 @@ import Timer from './ui/Timer';
 const BottomBar = () => {
   const { pathname } = useLocation();
   const allRoutes = ['/', '/works', '/blogs'];
-  const bottomNav = allRoutes.filter(route => route !== pathname);
- 
+  let bottomNav;
+  let currPath = pathname.split('/')
+  if (currPath[1] === 'blog') {
+    bottomNav = ['/', '/works']; // hardcoded for /blog
+  } else {
+    bottomNav = allRoutes.filter(route => route !== pathname);
+  }
   return (
     <nav className='fixed bottom-0 bg-black h-[64px] lg:h-[72px] w-full grid grid-cols-12 ff-aalto uppercase text-3xl xl:text-4xl tracking-wider '>
         <div className='hidden sm:grid place-content-center sm:col-span-6 opacity-90  grid-border !border-r-0 !border-b-0 px-2'>
