@@ -18,7 +18,7 @@ function App() {
     <Navbar />
     <section className='content-container'>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index path="/" element={<Home />} />
         <Route path="/works" element={<Works />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog/:blog_id" element={<Blog />} />
