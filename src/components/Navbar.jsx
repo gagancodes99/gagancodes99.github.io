@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className='w-full h-auto grid grid-cols-12 fixed top-0 bg-black z-50 max-w-[1799px]'>
         <section className="col-span-12 lg:col-span-8 h-16 grid grid-cols-12">
-            <Link to={'/'} tabIndex={1} className='col-span-4 grid-border !border-l-0 !border-t-0 flex items-center justify-center sm:justify-start px-2 lg:px-4'>
+            <Link to={'/'} tabIndex={1} className='col-span-4 grid-border !border-l-0 !border-t-0 flex items-center justify-center sm:justify-center px-2 lg:px-4'>
                 <Logo className='h-12 w-12'/> 
                 <div className='hidden sm:flex gap-1 lg:gap-2 text-sm sm:text-lg xl:text-2xl'>
                     <p className='text-primary font-semibold tracking-[1.5px]'>GAGAN</p>
@@ -43,7 +43,7 @@ const Navbar = () => {
         <a href='https://github.com/akash-cloud001' target='_blank' tabIndex={3} className='col-span-3 grid-border !border-r-0  !border-t-0 grid place-content-center'>
             <GithubIcon className='h-8 w-8 md:h-10 md:w-10'/>
         </a>
-        <a href='https://linkedin.in' target='_blank' tabIndex={4} className='col-span-3 grid-border  !border-t-0 grid place-content-center'>
+        <a href='https://linkedin.in' target='_blank' tabIndex={4} className='col-span-3 grid-border !border-r-0 !border-t-0 grid place-content-center'>
             <LinkedinIcon className='h-8 w-8 md:h-10 md:w-10'/>
         </a>
         </section>
