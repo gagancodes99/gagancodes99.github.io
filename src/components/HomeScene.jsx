@@ -46,7 +46,7 @@ const HomeScene = () => {
   })
   return (
     <>
-      <OrbitControls />
+      <OrbitControls enableZoom={false} />
       <Center>
         <group scale={1}>
           <points ref={particlesRef}>
