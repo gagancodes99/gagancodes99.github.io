@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import ChevronIcon from './svgs/ChevronIcon'
 import BottomBar from './BottomBar'
+import HomeLights from './ui/HomeLights'
+import HomeScene from './HomeScene'
+import { Canvas } from '@react-three/fiber'
 const HomeMob = () => {
   return (
     <section className="home-mob-container">
@@ -11,8 +14,11 @@ const HomeMob = () => {
         <span><span className='stroke-text text-transparent tracking-[3px]'>precision</span> and <span className='stroke-text text-transparent tracking-[3px]'>innovation</span></span>
       </header>
 
-      <figure className='p-6 grid-border !border-t-0 !border-x-0 grid place-content-center'>
-        <img src="/hero.png" alt="" />
+      <figure className='h-96 grid-border !border-t-0 !border-x-0 grid place-content-center'>
+        <Canvas className='!h-96'>
+            <HomeLights />
+            <HomeScene />
+        </Canvas>
       </figure>
 
       <article className='p-6'>

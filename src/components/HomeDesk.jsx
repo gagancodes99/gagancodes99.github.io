@@ -3,6 +3,7 @@ import BottomBar from './BottomBar'
 import ChevronIcon from './svgs/ChevronIcon'
 import { Canvas } from '@react-three/fiber'
 import HomeScene from './HomeScene'
+import HomeLights from './ui/HomeLights'
 
 const HomeDesk = () => {
   return (
@@ -28,24 +29,9 @@ const HomeDesk = () => {
       </article>
       <article className='col-span-7 relative flex flex-col items-start'>
         <aside className='h-full w-full grid-border !border-b-0 !border-t-0 !border-r-0 flex items-center justify-center'>
-          {/* <img src="/hero.png" alt="" className='aspect-square w-[300px] h-[300px]'/> */}
+        
           <Canvas>
-            <ambientLight intensity={0.3} />
-            <directionalLight
-              color={'#fff'}
-              intensity={1.2}
-              position={[5, 5, 5]}
-              castShadow
-              shadow-mapSize-width={1024}
-              shadow-mapSize-height={1024}
-            />
-            <spotLight
-              intensity={2}
-              position={[0, 5, 5]}
-              angle={0.3}
-              penumbra={1}
-              castShadow
-            />
+            <HomeLights />
             <HomeScene />
           </Canvas>
         </aside>
