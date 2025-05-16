@@ -5,7 +5,7 @@ const HomeLights = () => {
     <>
         <ambientLight intensity={0.3} />
         <directionalLight
-            color={'#fff'}
+            color={'#ffffff'}
             intensity={1.2}
             position={[5, 5, 5]}
             castShadow

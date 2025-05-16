@@ -1,6 +1,7 @@
 import React from 'react'
 import BottomBar from './BottomBar'
 import ChevronIcon from './svgs/ChevronIcon'
+import GridDistortion from './ui/GridDistortion'
 const WorkDesk = () => {
   return (
     <section className='h-full grid grid-cols-12'>
@@ -22,8 +23,15 @@ const WorkDesk = () => {
       </article>
     </article>
     <article className='col-span-7 flex flex-col items-start'>
-      <aside className='h-full w-full grid-border !border-b-0 !border-t-0 !border-r-0 flex items-center justify-center'>
-        <img src="/hero.png" alt="" className='aspect-square w-[300px] h-[300px]'/>
+      <aside className='h-full w-full grid-border !border-b-0 !border-t-0 !border-r-0 flex items-center justify-center relative'>
+        <GridDistortion
+          imageSrc="https://picsum.photos/1920/1080?grayscale"
+          grid={15}
+          mouse={0.25}
+          strength={0.15}
+          relaxation={0.9}
+          className="custom-class z-50"
+        />
       </aside>
     </article>
     <BottomBar />  

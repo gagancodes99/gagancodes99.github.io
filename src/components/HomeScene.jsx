@@ -58,10 +58,10 @@ const HomeScene = () => {
                 itemSize={3}
               />
             </bufferGeometry>
-            <pointsMaterial color="fff" size={0.02} />
+            <pointsMaterial color="white" size={0.02} />
             <PointMaterial
               transparent
-              color="#fff"
+              color="#ffffff"
               size={0.012}
               sizeAttenuation={true}
               depthWrite={true}
