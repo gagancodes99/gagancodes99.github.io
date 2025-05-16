@@ -26,7 +26,7 @@ const WorkDesk = () => {
       <aside className='h-full w-full grid-border !border-b-0 !border-t-0 !border-r-0 flex items-center justify-center relative'>
         <GridDistortion
           imageSrc="https://picsum.photos/1920/1080?grayscale"
-          grid={15}
+          grid={10}
           mouse={0.25}
           strength={0.15}
           relaxation={0.9}
