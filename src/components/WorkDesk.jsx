@@ -19,7 +19,7 @@ const WorkDesk = ({projects, handleCurrProject, currProject}) => {
       <article className='p-6'>
         <h1 className='text-4xl xs:text-5xl tacking-[1px] ff-aalto relative pl-4'><ChevronIcon className='absolute h-6 w-6 top-1/2 -translate-y-1/2 -left-3' /> TOOLS USED</h1>
         <ul className='list-disc list-outside pl-2 pt-4 font-light text-white/90 text-base xl:text-xl'>
-          
+           
         </ul>
       </article>
     </article>
