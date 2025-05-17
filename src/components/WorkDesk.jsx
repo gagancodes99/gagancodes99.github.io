@@ -3,9 +3,11 @@ import BottomBar from './BottomBar'
 import ChevronIcon from './svgs/ChevronIcon'
 import GridDistortion from './ui/GridDistortion'
 import ArrowIcon from './svgs/ArrowIcon'
+import { FloatingCard } from './FloatingCard'
+import { Link } from 'react-router-dom'
 const WorkDesk = ({projects, handleCurrProject, currProject}) => {
   return (
-    <section className='h-full grid grid-cols-12'>
+    <section className='h-full grid grid-cols-12 overflow-hidden'>
     <article className='col-span-5'>
       <aside className=' grid-border !border-t-0 !border-x-0 p-6'>
         <header className='ff-aalto text-white/90 text-5xl xl:text-6xl tracking-[1px] flex flex-col items-start uppercase'>
@@ -16,10 +18,10 @@ const WorkDesk = ({projects, handleCurrProject, currProject}) => {
         </p>
 
       </aside>
-      <article className='p-6'>
+      <article className='px-6 pt-6 pb-0'>
         <h1 className='text-4xl xs:text-5xl tacking-[1px] ff-aalto relative pl-4'><ChevronIcon className='absolute h-6 w-6 top-1/2 -translate-y-1/2 -left-3' /> TOOLS USED</h1>
         <ul className='list-disc list-outside pl-2 pt-4 font-light text-white/90 text-base xl:text-xl'>
-           
+           <FloatingCard  projects={projects[currProject]?.tags}/>
         </ul>
       </article>
     </article>

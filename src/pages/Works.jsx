@@ -35,7 +35,7 @@ const projects = [
     smallDescription: "A React Native app to shop nearby while walking, powered by Google Maps API and Laravel backend.",
     largeDescription: "WalkBuy is a location-based mobile shopping app that helps users discover and buy from local vendors. Users can view stores around them on a live map, explore product catalogs, and place orders directly from their phones. Vendors manage their store via a Laravel backend, while push notifications and real-time updates enhance user experience. Hosted on DigitalOcean.",
     url: "https://walkbuy.example.com",
-    tags: ["React Native", "Google Maps API", "Laravel"],
+    tags: ["React Native", "Google Maps", "Laravel", 'stripe'],
   },
   {
     id: "globalexp-76a1-49b4-bfd7-c9f8e2a91e39",
