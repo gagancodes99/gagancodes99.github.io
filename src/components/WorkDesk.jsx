@@ -10,20 +10,27 @@ const WorkDesk = ({projects, handleCurrProject, currProject}) => {
     <section className='h-full grid grid-cols-12'>
     <article className='col-span-5 relative h-full'>
       <aside className='p-6'>
-        <header className='ff-aalto text-white/90 text-4xl xl:text-5xl tracking-[1px] flex flex-col items-start uppercase'>
-          <span>{projects[currProject]?.title}</span>
-        </header>
-        <p className='text-white/90 text-base xl:text-lg font-light mt-4'>
+        <a 
+          href={projects[currProject]?.url} 
+          className='group ff-aalto text-white/90 text-4xl xl:text-5xl 2xl:text-6xl tracking-[1px] flex flex-row items-center gap-2 uppercase hover:text-primary duration-150 transition-all'
+        >
+          <span className='group-hover:text-primary duration-150 transition-all'>
+            {projects[currProject]?.title}
+          </span>
+          <ArrowIcon className='h-5 fill-white group-hover:fill-primary duration-150 transition-all -rotate-45 group-hover:rotate-[-50deg]' />
+        </a>
+
+        <p className='text-white/90 text-base xl:text-lg 2xl:text-2xl font-light mt-4'>
           {projects[currProject]?.smallDescription}
         </p>
 
       </aside>
       <article className='pb-0'>
-        <h1 className='text-3xl xs:text-4xl tacking-[1px] ff-aalto relative pl-6 tracking-wide'> TOOLS USED</h1>
+        <h1 className='text-4xl xl:text-5xl 2xl:text-6xl tacking-[1px] ff-aalto relative pl-6 tracking-wide'> TOOLS USED</h1>
         <ul className='list-outside pt-2 font-light text-white/90 text-base xl:text-xl'>
            {/* <FloatingCard  projects={projects[currProject]?.tags}/> */}
            {projects[currProject]?.tags.map((tag, idx)=>(
-              <li key={idx} className='h-12 mt-2 w-full bg-black hover:bg-primary text-primary hover:text-white duration-150 transition-all ff-aalto text-[32px] flex items-center px-8 tracking-wide'>
+              <li key={idx} className='py-2 2xl:py-3 w-full bg-black hover:bg-primary text-primary hover:text-white duration-150 transition-all ff-aalto text-4xl 2xl:text-6xl flex items-center px-8 tracking-wide'>
                 {tag}
               </li>
            ))}
