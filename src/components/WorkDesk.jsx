@@ -42,7 +42,7 @@ const WorkDesk = ({projects, handleCurrProject, currProject}) => {
             <ArrowIcon className=' w-6 fill-white/90 rotate-180 ' />
           </button>
 
-          <button onClick={()=>handleCurrProject(currProject+1)} className='col-span-4 grid place-content-center grid-border !border-y-0 text-4xl ff-aalto tracking-wide text-white/90'>
+          <button className='col-span-4 grid place-content-center grid-border !border-y-0 text-4xl ff-aalto tracking-wide text-white/90'>
             Know More
           </button>
           <button onClick={()=>handleCurrProject(currProject+1)} className='col-span-4 grid place-content-center grid-border !border-y-0 !border-r-0'>
