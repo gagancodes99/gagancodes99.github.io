@@ -26,7 +26,7 @@ const projects = [
     smallDescription: "Seat-based food ordering system for restaurants and stadiums using Nuxt3, Laravel, Stripe, and AWS.",
     largeDescription: "EFYS allows customers to scan a QR code from their seat and place food orders without leaving their spot. It supports real-time order tracking, Stripe-powered payments, and a powerful admin dashboard built with Laravel. Restaurant owners can manage menus, orders, and analytics. Hosted on AWS with secure and scalable infrastructure.",
     url: "http://eatfromyourseat.com/",
-    tags: ["Nuxt3 / Nuxt2", "Laravel", "Stripe", "AWS"],
+    tags: ["Nuxt2 & 3", "Laravel", "Stripe", "AWS"],
   },
   {
     id: "prodigy-76a1-49b4-bfd7-c9f8e2a91e39",
