@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary: #F66435;
+    --secondary: #29292B;
+    --white: #C9C7BA;
+    --black: #29292B;
+}
+
+body{
+    background: var(--black);
+    width: 100%;
+    height: 100dvh;
+    /* overflow: hidden; */
+    font-family: "Geist", sans-serif;
+    color: var(--white);
+    max-width: 1800px;
+    margin-inline: auto;
+}
+.main-container{
+    overflow: hidden;
+}
+.content-container{
+    height: calc(100dvh - 128px - 64px);
+    margin-top: 128px;
+    overflow-y: scroll;
+}
+@media screen and (min-width: 1024px) {
+    .content-container{
+        height: calc(100dvh - 64px - 72px);
+        margin-top: 64px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    body{
+        border-inline: 1px solid rgba(201,199,189, 0.2);
+    }
+}
+@font-face {
+    font-family: 'aalto';
+    src: url('./assets/fonts/aalto.otf') format('truetype');
+    font-style: normal;
+}
+.ff-aalto{
+    font-family: 'aalto';
+}
+.ff-geist{
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+}
+.grid-border{
+    border: 1px solid rgba(201,199,189,.20);
+}
+.section-container{
+    height: calc(100dvh - 128px);
+    width: 100%;
+}
+.stroke-text{
+    -webkit-text-stroke:  0.8px var(--primary);
+}
+
+
+@media screen and (min-width: 400px) {
+    .stroke-text{
+        -webkit-text-stroke:  0.9px var(--primary);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .section-container{
+        height: calc(100dvh - 64px);
+    }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.content-container {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
