@@ -39,13 +39,13 @@ const Navbar = () => {
             <div onClick={()=>setIsModalOpen(!isModalOpen)} tabIndex={2} className='col-span-3 grid-border !border-r-0  !border-t-0 grid place-content-center'>
                 <ScanCode className='h-7 w-7 md:h-8 md:w-8'/>
             </div>
-            <a href='mailto:akashparmar6561@gmail.com' target='_blank' tabIndex={2} className='col-span-3 grid-border !border-r-0  !border-t-0 grid place-content-center'>
+            <a href='mailto:gagan@gagancodes.dev' target='_blank' tabIndex={2} className='col-span-3 grid-border !border-r-0  !border-t-0 grid place-content-center'>
                 <EmailIcon className='h-8 w-8 md:h-10 md:w-10'/>
             </a>
-            <a href='https://github.com/akash-cloud001' target='_blank' tabIndex={3} className='col-span-3 grid-border !border-r-0  !border-t-0 grid place-content-center'>
+            <a href='https://github.com/gagancodes99' target='_blank' tabIndex={3} className='col-span-3 grid-border !border-r-0  !border-t-0 grid place-content-center'>
                 <GithubIcon className='h-8 w-8 md:h-10 md:w-10'/>
             </a>
-            <a href='https://linkedin.in' target='_blank' tabIndex={4} className='col-span-3 grid-border !border-r-1 !border-t-0 grid place-content-center'>
+            <a href='https://www.linkedin.com/in/gagancodes/' target='_blank' tabIndex={4} className='col-span-3 grid-border !border-r-1 !border-t-0 grid place-content-center'>
                 <LinkedinIcon className='h-8 w-8 md:h-10 md:w-10'/>
             </a>
             </section>
