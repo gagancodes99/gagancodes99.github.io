@@ -11,13 +11,13 @@ const WorkMob = ({projects}) => {
                 return(
                     <div key={idx}>
                         <aside className='px-6 pb-0 pt-4 flex flex-col items-center justify-center gap-5' key={idx}>
-                            <div className='w-full aspect-square max-w-80 bg-primary rounded mx-auto overflow-hidden'>
+                            <div className='w-full aspect-square max-w-80 rounded mx-auto overflow-hidden'>
                                 <img src={pro?.imageUrl} alt={pro?.title} className='h-full w-full object-cover '/>
                             </div>
                             <header className='ff-aalto text-primary text-4xl xs:text-[44px] leading-[44px] tracking-[1px] flex flex-row flex-wrap items-start uppercase'>
                             <a href={pro?.url} target='_blank'>{pro?.title}</a>
                             </header>
-                            <p className='text-white/90 text-sm xs:text-base font-light text-center'>
+                            <p className='text-white/90 text-sm xs:text-base font-light text-left'>
                             {pro?.smallDescription}
                             </p>
 
